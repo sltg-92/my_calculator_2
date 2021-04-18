@@ -9,6 +9,7 @@
 		Number:
 		<input type="text" id="n1">
 		<p>
+		        <button onclick="square()"> x^2 </button>
 		        <button onclick="cube()"> x^3 </button>
 			<button onclick="sine()"> sin </button>
 			<button onclick="power_4()"> x^4 </button>
@@ -25,6 +26,10 @@
                 function power_4() {
 			var num = document.getElementById("n1");
 			num.value = Math.pow(num.value, 4);
+		}
+                function square() {
+			var num = document.getElementById("n1");
+                        num.value = Math.pow(num.value, 2);
 		}
         </script>
         </body>
